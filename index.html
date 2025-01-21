@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Smoking - Warning!</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 36px;
+            background-color: red;
+            color: yellow;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            animation: flicker 1.5s infinite;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px;
+            text-align: justify;
+        }
+        .button-link {
+            font-size: 20px;
+            background-color: yellow;
+            color: black;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 15px;
+            border: 2px solid red;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button-link:hover {
+            background-color: red;
+            color: yellow;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid red;
+            border-radius: 10px;
+        }
+        .scrolling-warning {
+            background-color: red;
+            color: yellow;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .scrolling-warning span {
+            display: inline-block;
+            animation: scroll-left 10s linear infinite;
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        footer {
+            margin-top: 20px;
+            background-color: black;
+            color: yellow;
+            text-align: center;
+            padding: 15px;
+            border-top: 2px solid red;
+        }
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            70% {
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>⚠️ No Smoking Anymore! ⚠️</h1>
+    <p>धूम्रपान का स्वास्थ्य पर गंभीर नकारात्मक प्रभाव पड़ता है। यह फेफड़ों के कैंसर, हृदय रोग, स्ट्रोक और श्वसन तंत्र की बीमारियों का मुख्य कारण है। सिगरेट में मौजूद निकोटीन और अन्य हानिकारक रसायन न केवल शरीर को नुकसान पहुंचाते हैं, बल्कि मानसिक स्वास्थ्य पर भी असर डालते हैं। धूम्रपान से रोग प्रतिरोधक क्षमता कमजोर होती है और समय से पहले बुढ़ापा आने का खतरा बढ़ जाता है। इसके साथ ही, यह दूसरों के लिए भी हानिकारक है, क्योंकि अप्रत्यक्ष धूम्रपान (पैसिव स्मोकिंग) से भी बीमारियों का खतरा होता है। धूम्रपान छोड़ना स्वास्थ्य सुधारने का सबसे अच्छा कदम है।</p>
+    <hr>
+    <a href="https://youtu.be/wXmjguNSDDA?si=Ndq5mKzA4EKy7RVv" target="_blank" class="button-link">Click Me!</a>
+    <video src="India - Dhuan (Hindi) - Enforcement.mp4" width="500" height="500" controls>
+        Your browser does not support the video tag.
+    </video>
+    <div class="scrolling-warning">
+        <span>⚠️ Smoking Kills! Stop Smoking Today! | Created by Pranish Siwakoti ⚠️</span>
+    </div>
+    <footer>
+        This website is made for public awareness. Please share to spread the message: "धूम्रपान पड़ेगा महंगा!" 🚭
+    </footer>
+    <script>
+        alert("Do you smoke? If yes, then think again. If no, continue exploring this website by clicking OK.");
+    </script>
+</body>
+</html>
